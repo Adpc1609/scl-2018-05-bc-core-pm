@@ -1,4 +1,8 @@
-/* Acá va tu código */
+h1{
+ color: rgb(22, 230, 195);
+ text-align: center;
+ 
+}
 .content{
     /*background: yellow;*/
     height: 500px;
@@ -21,5 +25,5 @@
 }
 
 #numHash{
-    width: 50px;
+    width: 120px;
 }
