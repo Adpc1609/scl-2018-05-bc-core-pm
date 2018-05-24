@@ -1,1 +1,25 @@
 /* Acá va tu código */
+.content{
+    /*background: yellow;*/
+    height: 500px;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.children{
+  /*  background: red; */
+
+}
+
+.button{
+    float: right;
+}
+#termino{
+    width: 100%
+}
+
+#numHash{
+    width: 50px;
+}
