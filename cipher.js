@@ -1,8 +1,8 @@
 window.cipher = {
-  encode: () => {
-    /* Acá va tu código */
+  encode: (offset,string) => {
+    /* los elementos que queremos desplazar a la derecha */
   },
-  decode: () => {
-    /* Acá va tu código */
+  decode: (offset,string) => {
+    /* los elementos que queremos desplazar a la izquierda */
   }
 }
