@@ -1,1 +1,29 @@
-/* Acá va tu código */
+h1{
+ color: rgb(22, 230, 195);
+ text-align: center;
+ 
+}
+.content{
+    /*background: yellow;*/
+    height: 500px;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.children{
+  /*  background: red; */
+
+}
+
+.button{
+    float: right;
+}
+#termino{
+    width: 100%
+}
+
+#numHash{
+    width: 120px;
+}
