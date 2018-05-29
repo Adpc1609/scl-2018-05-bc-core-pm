@@ -13,7 +13,9 @@ window.cipher = {
        
       }
       console.log(newTermino);
-    return newTermino;
+    //return newTermino;
+    document.getElementById("termino").value="palabra cifrada: " + newTermino;
+
   },
   decode: (offset,termino) => {
     //console.log('decode');
@@ -27,7 +29,9 @@ window.cipher = {
      
     }
     console.log(newTermino);
-    return newTermino;
+    //return newTermino;
+    document.getElementById("termino").value="palabra cifrada: " + newTermino;
+
     /* los elementos que queremos desplazar a la izquierda */
   }
 } 
