@@ -20,9 +20,12 @@ function encode(){
             return;
         }
 
-        console.log('datos validos');
+        console.log('datos validos',document.getElementById("msgEncode"));
          let response =window.cipher.encode(numHash, texto);
-      console.log("event click", termino, numHash);
+         document.getElementById("termino").value= response;
+         document.getElementById("msgEncode").style.display = "block";
+         document.getElementById("msgDecode").style.display = "none";
+      
     
 }
 
@@ -44,7 +47,18 @@ function decode(){
 
         console.log('datos validos');
          let response =window.cipher.decode(numHash, texto);
+         document.getElementById("termino").value= response;
+         document.getElementById("msgEncode").style.display = "none";
+         document.getElementById("msgDecode").style.display = "block";
       console.log("event click", termino, numHash);
 
 
+}
+
+function resetData(){
+    console.log('clear')
+    document.getElementById("termino").value='';
+    document.getElementById("numHash").value='';
+    document.getElementById("msgEncode").style.display = "none";
+    document.getElementById("msgDecode").style.display = "none";
 }
