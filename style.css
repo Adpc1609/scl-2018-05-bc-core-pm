@@ -1,3 +1,8 @@
+*{
+margin: 0;
+padding: 0;
+}
+
 h1{
  color: rgb(22, 230, 195);
  text-align: center;
@@ -5,11 +10,26 @@ h1{
  font-family: 'Roboto', sans-serif;
  
 }
+
+h2{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+   }
+body{
+    background: url(../src/fondo1.jpg) no-repeat 
+    fixed center center;
+    background-size: cover;
+}
+
+
+
 .content{
     /*background: yellow;*/
-    height: 500px;
+    height: 300px;
     /*IMPORTANTE*/
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
 }
@@ -22,10 +42,13 @@ h1{
 
 .button{
     float: right;
-    font-family: 'Roboto', sans-serif;
+    
 }
+
 #termino{
     width: 100%
+
+    
 }
 
 #numHash{
@@ -33,6 +56,6 @@ h1{
 }
 
 #msgEncode, #msgDecode{
-    color: red;
+    color: whitesmoke;
     display: none;
 }
