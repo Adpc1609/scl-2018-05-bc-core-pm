@@ -12,19 +12,20 @@
 <h2>Has tus conversaciones mas divertidas y secretas!</h2>
   <div id="root" class="content">
     <div class="children">
-        <div id="msgEncode">Frase Cifrada:</div>
-        <div id="msgDecode">Frase Decifrada:</div>
-      <textarea id="termino" rows="8" cols="60" placeholder="ingrese Mensaje" ></textarea> <br>
-      <input id="numHash" type="text" placeholder="Desplazamiento>>">
-      <div class="button">
-        <input type="button" onclick="encode()" value="cifrar">
-        <input type="button" onclick="decode()"value="descifrar">
-        <input type="button" onclick="resetData()"value="Limpiar">
+      <div id="msgEncode">Frase Cifrada:</div>
+      <div id="msgDecode">Frase Decifrada:</div>
+      <textarea id="textBox" rows="8" cols="60" placeholder="ingrese Mensaje" ></textarea> <br>
+      <input id="number" type="text" placeholder="Desplazamiento>>">
+      <div class="botones">
+        <button class="boton1" onclick="encode()" >cifrar</button>
+        <button class="boton1" onclick="decode()" >descifrar</button>
+        <button class="boton2" onclick="resetData()" >limpiar</button>
+      </div>
     </div>
-    
   </div>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>
+
 </body>
 </html> 

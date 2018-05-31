@@ -1,18 +1,18 @@
  window.cipher = {
-  encode: (offset,termino) => {
+  encode: (string,offset) => {
     /* los elementos que queremos desplazar a la derecha */
 
     console.log('encode');
-    newTermino='';
-    for (var i = 0; i<termino.length; i++) {
+    let newTermino='';
+    for (var i = 0; i<string.length; i++) {
        // texto a descifrar-convertir a Mayusculas/ obtener ascii en esa posicion
-       resultAscii= termino[i].toUpperCase().charCodeAt();//obtenemos ascii;
+       let resultAscii= string[i].toUpperCase().charCodeAt();//obtenemos ascii;
 
        if(resultAscii===32){
         newTermino+=' ';
       }else{
-        newAscii = (resultAscii - 65 + Number(offset)) % 26 + 65;//formula cifrado cesar
-        resultnew = String.fromCharCode(newAscii); //convierte el ascii sustituto en la nueva letra s
+        let newAscii = (resultAscii - 65 + offset) % 26 + 65;//formula cifrado cesar
+        let resultnew = String.fromCharCode(newAscii); //convierte el ascii sustituto en la nueva letra s
         newTermino+=resultnew;
       }
        
@@ -22,18 +22,18 @@
    
 
   },
-
-  decode: (offset,termino) => {
+  /* los elementos que queremos desplazar a la izquierda */
+  decode: (string,offset) => {
     //console.log('decode');
-    newTermino='';
-    for (var i =0; i<termino.length; i++){
-      resultAscii=termino[i].toUpperCase().charCodeAt();
+    let newTermino='';
+    for (var i =0; i<string.length; i++){
+      let resultAscii=string[i].toUpperCase().charCodeAt();
       if(resultAscii===32){
         newTermino+=' ';
       }else{
-        newAscii= (resultAscii + 65 - Number(offset)) % 26 + 65;
-        resultnew = String.fromCharCode(newAscii);
-        newTermino+=resultnew;
+        let newAscii= (resultAscii + 65 - offset) % 26 + 65;
+        let resultnew = String.fromCharCode(newAscii);
+        newTermino += resultnew;
        
       }
       
@@ -42,6 +42,6 @@
     return newTermino;
     
 
-    /* los elementos que queremos desplazar a la izquierda */
+    
   }
 } 
