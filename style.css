@@ -18,7 +18,7 @@ h2{
     
    }
 body{
-    background: url(../src/fondo1.jpg) no-repeat 
+    background: url(fondo1.jpg) no-repeat 
     fixed center center;
     background-size: cover;
 }
